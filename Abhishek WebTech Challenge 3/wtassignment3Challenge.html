@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Review</title>
+  </head>
+  <style media="screen">
+    .img{
+      height : 40px;
+      width : 100px;
+    }
+    #demo1{
+      position: absolute;
+      right: 550px;
+      bottom: 350px;
+    }
+    a{
+      color: blue;
+    }
+  </style>
+  <body>
+
+    <p id="demo1"></p>
+    <script>
+    var var1 = setInterval(inTimer, 500);
+    var fs = 5; //font size
+    var ids = document.getElementById("demo1");
+    function inTimer()
+    {
+    ids.innerHTML = 'Python!';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: red; text-align: center");
+    fs += 5;
+    if (fs >= 50)
+    {
+    clearInterval(var1); //paused
+    var2 = setInterval(deTimer, 500);
+
+    }
+    }
+    function deTimer() //fs = 50px
+    {
+    fs -= 5;
+    ids.innerHTML = 'Contact Me To Learn Python!!!!';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: black; text-align: center");
+    if (fs == 5)
+    {
+    clearInterval(var2); //paused
+    var1 = setInterval(inTimer, 500);
+    }
+    }
+    </script>
+
+    <header>
+      <a href="#home">Home</a> ||
+      <a href="#">Places</a> ||
+      <a href="#last">Gallery</a> ||
+      <a href="#">About Us</a> ||
+      <a href="#">Search</a> ||
+      <h2>Python, Programming Language</h2>
+      <figure>
+      <img src="https://i.pinimg.com/564x/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg" alt="Python, Programing Language" height="200" width="200"><br>
+      </figure>
+      <article class="demo">
+      <p>by <a href="#">Abhishek</a></p>
+      <p>Python is a Beautiful programming language. And allows programmer boundlessly to do almost everything.
+        And is the best language for the beginners to start with.
+        Ping me for Python classes!!
+     </p>
+     </article>
+     <h3>Reviews</h3>
+        <div>
+          <p><strong>Beautiful Language</strong> <br> Abhi
+            <img src="https://t4.ftcdn.net/jpg/02/74/86/43/240_F_274864312_uNlm9yCpdViwKzHkCp0sOBrmJFN0pKAa.jpg" class="img">
+          </p>
+          <p>An Amazing Language to learn.</p>
+          <hr>
+          <p><strong>Easy to learn</strong> <br> Lakshmi
+            <img src="https://t4.ftcdn.net/jpg/02/74/86/39/240_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg" class="img">
+          <p>Very easy to learn for beginners</p>
+          <hr>
+          <p><strong>Nice!!</strong> <br> Priya
+            <img src="https://t3.ftcdn.net/jpg/02/74/86/46/240_F_274864624_pjFGvoCZmD8fmxLhWCB7S6clkAFaiugO.jpg" class="img">
+          </p>
+          <p>Language with a great scope</p>
+          <hr>
+        </div>
+        <a href="#home">Home</a> ||
+        <a href="#">Places</a> ||
+        <a href="#last">Gallery</a> ||
+        <a href="#">About Us</a> ||
+        <a href="#">Search</a> ||
+        <p><i><b>Contact me to learn python. Mail me at abhisheku3u@gmail.com</b></i></p>
+    </header>
+  </body>
+</html>
